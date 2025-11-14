@@ -1,0 +1,62 @@
+/*
+# Custom Beeper.app style
+This file will be injected as a <style> tag
+After making your changes, type "Reload custom CSS" in the command bar
+To open dev tools, open the command bar and type "open console"
+*/
+
+:root {
+  --font-family: Roboto Variable, Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu, Cantarell, Fira Sans, sans-serif;
+  --color-backing-shade: #292f40;
+  --color-from: #292f40;
+  --color-to: #191e2b;
+  --color-background-app: #292f40;
+  --header-height: 45px;
+  --color-tertiary-container: #181c27;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-backing-shade: #10141f;
+    --color-from: #292f40;
+    --color-to: #191e2b;
+    --color-background-app: #292f40;
+    --header-height: 45px;
+    --color-tertiary-container: #181c27;
+  }
+
+  body.theme-rich[data-theme-color="rich-grey"] {
+    --color-from: #292f40;
+    --color-to: #191e2b;
+  }
+
+  .right-wrapper .right.right-thread .right-pane-header,
+  .right-wrapper .right.right-prefs .right-pane-header {
+    background-color: #1d2230;
+  }
+
+  .right-pane-header.right-pane-header-thread {
+    border-radius: 0;
+  }
+
+  .right-wrapper {
+    --frame-gap: 0px;
+  }
+
+  .messages-list-wrapper {
+    background-color: #111624;
+    background-repeat: repeat;
+    background-size: contain;
+  }
+
+  .messages-list-scrolling-container > div {
+    padding: 1rem;
+  }
+
+  .ThreadListReadIcon-module__iconContainer {
+    display: none;
+  }
+
+  .ThreadListItem-module__preview.redacted-region {
+    font-size: 0.75rem;
+  }
+}
